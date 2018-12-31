@@ -114,10 +114,7 @@ class MemeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     // MARK: Text Field Delegate Methods
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        if textField.isEditing {
-            textField.text = ""
-        }
-        navigationBarButtons(enabled: true)
+        textField.text = ""
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -129,6 +126,7 @@ class MemeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             bottomTextField.text = "BOTTOM"
             navigationBarButtons(enabled: false)
         }
+        navigationBarButtons(enabled: true)
         textField.resignFirstResponder()
         return true
     }

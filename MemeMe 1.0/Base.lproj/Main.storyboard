@@ -68,24 +68,24 @@
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XIk-Di-gxa" userLabel="Top Text Field">
-                                <rect key="frame" x="16" y="134" width="343" height="45"/>
+                                <rect key="frame" x="16" y="99" width="343" height="45"/>
                                 <color key="backgroundColor" red="0.97257202860000003" green="0.97246617079999997" blue="0.97645944360000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Mhe-aP-UQ9"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kKG-LN-X8K" userLabel="Bottom Text Field">
-                                <rect key="frame" x="16" y="508" width="343" height="45"/>
+                                <rect key="frame" x="16" y="543" width="343" height="45"/>
                                 <color key="backgroundColor" red="0.97257202860000003" green="0.97246617079999997" blue="0.97645944360000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="ldT-Io-RDT"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.97257202863693237" green="0.97246617078781128" blue="0.97645944356918335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -93,11 +93,11 @@
                             <constraint firstItem="sT6-Wr-xm6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Bv-vm-clG"/>
                             <constraint firstItem="vXU-zt-zmH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5cD-eG-vcq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sT6-Wr-xm6" secondAttribute="trailing" id="7EE-lP-14c"/>
-                            <constraint firstItem="vXU-zt-zmH" firstAttribute="top" secondItem="kKG-LN-X8K" secondAttribute="bottom" constant="70" id="8va-PK-Vyb"/>
+                            <constraint firstItem="vXU-zt-zmH" firstAttribute="top" secondItem="kKG-LN-X8K" secondAttribute="bottom" constant="35" id="8va-PK-Vyb"/>
                             <constraint firstItem="ICV-6a-5Ww" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Avw-AO-0Vo"/>
                             <constraint firstItem="kKG-LN-X8K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="C0k-Or-OBG"/>
                             <constraint firstItem="XIk-Di-gxa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GC5-pj-Sng"/>
-                            <constraint firstItem="XIk-Di-gxa" firstAttribute="top" secondItem="ICV-6a-5Ww" secondAttribute="bottom" constant="70" id="GQv-Px-AiD"/>
+                            <constraint firstItem="XIk-Di-gxa" firstAttribute="top" secondItem="ICV-6a-5Ww" secondAttribute="bottom" constant="35" id="GQv-Px-AiD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XIk-Di-gxa" secondAttribute="trailing" constant="16" id="HjU-Lk-CV0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kKG-LN-X8K" secondAttribute="trailing" constant="16" id="PE0-Gh-UuC"/>
                             <constraint firstItem="sT6-Wr-xm6" firstAttribute="top" secondItem="ICV-6a-5Ww" secondAttribute="bottom" id="SHU-lF-Vg2"/>
