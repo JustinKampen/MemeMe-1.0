@@ -121,12 +121,12 @@ class MemeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         if topTextField.text == "" {
             topTextField.text = "TOP"
             navigationBarButtons(enabled: false)
-        }
-        if bottomTextField.text == "" {
+        } else if bottomTextField.text == "" {
             bottomTextField.text = "BOTTOM"
             navigationBarButtons(enabled: false)
+        } else {
+            navigationBarButtons(enabled: true)
         }
-        navigationBarButtons(enabled: true)
         textField.resignFirstResponder()
         return true
     }
@@ -139,13 +139,13 @@ class MemeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     func unsubscribeFromKeyboardNotifications() {
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(subscribeToKeyboardNotications(), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.removeObserver(subscribeToKeyboardNotications(), name: UIResponder.keyboardWillShowNotification, object: nil)
     }
     
     @objc func keyboardWillShow(_ notification: Notification) {
         if bottomTextField.isEditing {
-            view.frame.origin.y = getKeyboardHeight(notification) * (-1)
+            view.frame.origin.y = -getKeyboardHeight(notification)
         }
     }
     
@@ -183,7 +183,7 @@ class MemeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         let memedImage = generateMemedImage()
         let activityView = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
         activityView.completionWithItemsHandler = { (activity, completed, items, error) in
-            if (completed) {
+            if completed {
                 self.save()
             }
         }
